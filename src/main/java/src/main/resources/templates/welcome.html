@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Handing Form Submission</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<form action="#" th:action="@{/welcome}" th:object="${welcome}"
+		method="post">
+<br/><br/><br/><br/>
+		<h1 align="center" style="color:#00CCFF;">Nuclei</h1>	
+
+		<div align="center" style="font-weight: bold;">
+
+			<table style="position: center;">
+				<tr>
+					<td style="color:#006600;">Name</td>
+					<td>&nbsp;&nbsp;<input type="text" th:field="*{name}" /></td>
+				</tr>
+
+				<tr><td><br/></td></tr>
+
+				<tr>
+					<td style="color:#006600;">Message</td>
+					<td>&nbsp;&nbsp;<input type="text" th:field="*{content}" /></td>
+				</tr>
+			
+				<tr><td><br/></td></tr>
+
+				<tr>
+					<td></td>
+					<td>&nbsp;&nbsp;<input type="submit" value="Submit" /></td>				
+				</tr>
+
+			</table>
+		</div>
+	</form>
+
+</body>
+</html>
