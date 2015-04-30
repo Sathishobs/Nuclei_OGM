@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Handing Form Submission</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<h1 align="center" style="color: #00CCFF;">Result</h1>
+
+	<div align="center">
+
+		<table>
+			<thead style="font-weight: bold;">
+				<tr>
+					<th style="padding-right: 50px">UUID</th>
+					<th style="padding-right: 50px">Name</th>
+					<th style="padding-right: 50px">Version</th>
+				</tr>
+			</thead>
+			<tbody>
+			
+				<tr th:each="template : ${templates}">
+					<td th:text="${template.UUID}" />
+					<td th:text="${template.name}" />
+					<td th:text="${template.version}" />
+				</tr>
+				
+				<tr th:each="blueprint : ${blueprints}">
+					<td th:text="${blueprint.UUID}" />
+					<td th:text="${blueprint.name}" />
+					<td th:text="${blueprint.version}" />
+				</tr>
+
+				<tr th:each="action : ${actions}">
+					<td th:text="${action.UUID}" />
+					<td th:text="${action.name}" />
+					<td th:text="${action.version}" />
+				</tr>
+
+				<tr>
+					<td><a href="/">Back</a></td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+
+	</div>
+
+</body>
+</html>

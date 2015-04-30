@@ -1,16 +1,9 @@
 package nuclei.domain;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.voodoodyne.jackson.jsog.JSOGGenerator;
-
-//@JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="id")
-@JsonIdentityInfo(generator=JSOGGenerator.class)
 public abstract class Entity {
-
-    @JsonProperty("id")
-    private Long id;
-
+	
+	private Long id;   
+	
     public Long getId() {
         return id;
     }
@@ -18,8 +11,9 @@ public abstract class Entity {
     public void setId(Long id) {
         this.id = id;
     }
+   
 
-    /**
+	/**
      * FIXME:
      * This is the default mechanism for providing entity identity to the OGM
      *

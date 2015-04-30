@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Vendor: Pivotal Software, Inc.
-Implementation-Title: Nuclei
-Implementation-Version: 0.0.1-RELEASE
-Implementation-Vendor-Id: org.springframework
-Build-Jdk: 1.6.0_65
-Built-By: Sathish
-Created-By: Maven Integration for Eclipse
-

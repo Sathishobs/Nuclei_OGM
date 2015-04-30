@@ -1,9 +1,10 @@
 package nuclei.service;
 
-import org.springframework.data.neo4j.repository.GraphRepository;
 import nuclei.domain.Entity;
 
-public abstract class GenericService<T> implements Service<T> {
+import org.springframework.data.neo4j.repository.GraphRepository;
+
+public abstract class GenericService<T> implements MainService<T> {
 
     private static final int DEPTH_LIST = 0;
     private static final int DEPTH_ENTITY = 1;
@@ -13,11 +14,13 @@ public abstract class GenericService<T> implements Service<T> {
     }
 
     public T find(Long id) {
-        return getRepository().findOne(id, DEPTH_ENTITY);
+    	Long id1=id.longValue();
+        return getRepository().findOne(id1, DEPTH_ENTITY);
     }
 
     public void delete(Long id) {
-        getRepository().delete(id);
+    	Long id1=id.longValue();
+        getRepository().delete(id1);
     }
 
     public T createOrUpdate(T entity) {

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Nuclei</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<h1 align="center" style="color: #00CCFF;">Nuclei</h1>
+	<div align="center" style="font-weight: bold;">
+
+
+		<form action="#" th:action="@{/template}" th:object="${index}"
+			method="post">
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<table style="position: center;">
+				<tr>
+					<td colspan="1"><h1>Template</h1></td>
+				</tr>
+				<tr>
+					<td style="color: #006600;">UUID</td>
+					<td>&nbsp;&nbsp;<input type="text" id="UUID" name="UUID"/></td>
+				</tr>
+
+				<tr>
+					<td style="color: #006600;">Name</td>
+					<td>&nbsp;&nbsp;<input type="text" id="name" name="name" /></td>
+				</tr>
+
+				<tr>
+					<td style="color: #006600;">Version</td>
+					<td>&nbsp;&nbsp;<input type="text" id="version" name="version"/></td>
+				</tr>
+
+				<tr>
+					<td colspan="1"><h1>Template Blueprint</h1></td>
+				</tr>
+
+				<tr>
+					<td style="color: #006600;">UUID</td>
+					<td>&nbsp;&nbsp;<input type="text" name="tbUUID" id="tbUUID" /></td>
+				</tr>
+				<tr>
+					<td style="color: #006600;">Name</td>
+					<td>&nbsp;&nbsp;<input type="text" id="tbName" name="tbName" /></td>
+				</tr>
+				<tr>
+					<td style="color: #006600;">Version</td>
+					<td>&nbsp;&nbsp;<input type="text" id="tbVersion" name="tbVersion" /></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>&nbsp;&nbsp;<input type="submit" value="Submit" /></td>
+				</tr> 
+
+			</table>
+
+		</form>
+
+
+		<!--
+<table> <tr><td>
+<form action="#" th:action="@{/templates}" th:object="${index}"	method="GET">Template<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr>
+
+<tr><td>
+<form action="#" th:action="@{/blueprints}" th:object="${index}" method="GET">Template Blue Print<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr>
+
+<tr><td>
+<form action="#" th:action="@{/actions}" th:object="${index}"	method="GET">Actions<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr>
+
+<tr><td>
+<form action="#" th:action="@{/tasks}" th:object="${index}" method="GET">Tasks<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr>
+
+<tr><td>
+<form action="#" th:action="@{/drivers}" th:object="${index}"	method="GET">Driver Mapper<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr>
+
+<tr><td>
+<form action="#" th:action="@{/versions}" th:object="${index}" method="GET">Version Mapper<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr>
+
+<tr><td>
+<form action="#" th:action="@{/apis}" th:object="${index}"	method="GET">External Service(API)<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr>
+
+<tr><td>
+<form action="#" th:action="@{/taxonomys}" th:object="${index}" method="GET">Interface Taxonomy<td><input type="submit" value="view" /></td></form>
+</td></tr>
+<tr><td>&nbsp;</td> </tr> 
+
+</table>-->
+	</div>
+</body>
+</html>
